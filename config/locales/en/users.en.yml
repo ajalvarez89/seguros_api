@@ -1,0 +1,40 @@
+
+en:
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password: "Password"
+        remember_me: "Remember me"
+        name: "Name"
+        lastname: "Lastname"
+        document: "Document"
+        document_type: "Document Type"
+
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              invalid: The password is invalid
+            email:
+              invalid: Please enter a valid Email
+              taken: Email has already been taken
+              blank: Email is required
+            current_password:
+              too_short: Password must be at least 6 characters
+            password:
+              current_password: Current password
+              confirmation: Verify password
+              too_short: Password must be at least 6 characters
+              blank: Password is required
+            name:
+              blank: "Name is required"
+            last_name:
+              blank: "Lastname is required"
+            document:
+              blank: "Document is required"
+              too_short: "Must be at least 6 characters"
+              invalid: "Must contain only numbers"
+            document_type:
+              blank: "Document type is required"

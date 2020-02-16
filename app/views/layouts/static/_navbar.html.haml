@@ -1,0 +1,12 @@
+.masthead.navbar-fixed-top
+  .inner
+    %a{href: "#{root_path}"}
+      %h3.masthead-brand Prueba tecnica Soat
+    %nav
+      %ul.nav.masthead-nav
+        %li{class: "#{@active == 'home' ? 'active' : 'inactive'}"}
+        %li{class: "#{@active == 'register' ? 'active' : 'inactive'}"}
+          %a{href: "#{new_user_registration_path}"}= t('home.navbar.signup')
+        %li{class: "#{@active == 'login' ? 'active' : 'inactive'}"}
+          %a{href: "#{new_user_session_path}"}= t('home.navbar.login')
+      %ul.nav.maste-right

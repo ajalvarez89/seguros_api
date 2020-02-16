@@ -1,0 +1,9 @@
+%tr
+  %td
+    = link_to vehicle.license, vehicle_path(vehicle)
+  %td= vehicle.rate.code
+  %td= vehicle.category
+  %td= vehicle.subcategory
+  %td= vehicle.age
+  %td= vehicle.full_value
+  %td= vehicle.user.full_name

@@ -1,0 +1,15 @@
+
+es:
+  dashboard:
+    navbar:
+      buy: "Comprar"
+      insurances: "Mis Seguros"
+      profile: "Perfil"
+      logout: "Salir"
+    sidebar:
+      dashboard: "Resumen"
+      sell: "Vendidos"
+      vehicles: "Vehiculos Registrados"
+      buy: "Comprar SOAT"
+      shopping: "Mis Compras"
+      profile: "Perfil"

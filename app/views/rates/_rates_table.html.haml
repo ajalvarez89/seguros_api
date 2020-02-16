@@ -1,0 +1,21 @@
+%table#rates_table.table.table-striped.table-hover.table-condensed.table-bordered
+  %thead
+    %th Código
+    %th Clase
+    %th Subclase
+    %th Edad
+    %th Valor Prima
+    %th Contribución Fosyga
+    %th Tasa Runt
+    %th TOTAL
+  %tbody
+    - Rate.all.each do |rate|
+      %tr
+        %td= rate.code
+        %td= rate.category
+        %td= rate.subcategory
+        %td= rate.age_range
+        %td.text-right= price(rate.bonus)
+        %td.text-right= price(rate.fosyga)
+        %td.text-right= price(Rate::RUNT_RATE)
+        %td.text-right= price(rate.total)

@@ -1,0 +1,37 @@
+
+es:
+  activerecord:
+    attributes:
+      vehicle:
+        license: "Placa"
+        category: "Clase"
+        subcategory: "Subtipo"
+        age: "Edad"
+        value_type: "Tipo de valor"
+        value: "Valor"
+
+  insurances:
+    new:
+      title: "Nuevo SOAT"
+      header: "Adquirir SOAT"
+      vehicle:
+        header: "Datos del Vehiculo"
+        message: "Si el vehiculo esta registrado solo ingrese la placa y prosiga"
+      subheader: "SOAT"
+      insurance_found: "El vehiculo cuenta con un seguro que vence "
+      insurance_not_found: "El vehiculo no cuenta con seguro"
+      continue: "Continuar"
+      cancel: "Cancelar"
+      submit: "Comprar"
+      insurance_end_message: "Su seguro sera valido por un año y empezara a estar vigente desde "
+    index:
+      title: "SOATS"
+      header: "Seguros Adquiridos"
+      table_headers:
+        license: "Placa"
+        code: "Codigo"
+    show:
+      header: "Seguro de vehiculo "
+    bought:
+      title: "Mis SOATS"
+      none: "No has comprado ningún seguro"
