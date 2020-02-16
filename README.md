@@ -1,24 +1,38 @@
-# README
+# SOAT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### Requerimientos
 
-* Ruby version
+* [Mailcatcher](https://mailcatcher.me/)
 
-* System dependencies
 
-* Configuration
+### Configuración
 
-* Database creation
+1. Ejecutar `bundle install` para instalar las gemas
 
-* Database initialization
+2. Inicializar la base de datos (create, migrate y seed).
 
-* How to run the test suite
+        bundle exec rake db:setup
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Instalar y arrancar mailcatcher para recibir los correos.
 
-* Deployment instructions
+        gem install mailcatcher
+        mailcatcher
 
-* ...
+4. Arrancar la aplicación
+
+        rails server
+
+        localhost:3000 # Aplicación web
+        localhost:1080 # Servidor de correos (Mailcatcher)
+
+## API
+
+Por seguridad, la API cuenta con **HTTP Basic Authentication**.
+
+La version mas actual de la API es **v1** (`/api/v1/`)
+
+## Ejecutar las pruebas
+
+        bundle exec rspec spec
+
