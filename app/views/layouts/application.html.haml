@@ -7,6 +7,11 @@
 
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'cable', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'common', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'dashboard', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'static', 'data-turbolinks-track': 'reload'
+
   %body
     = render 'layouts/navbar'
     #main_container.container-fluid

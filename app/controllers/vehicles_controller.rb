@@ -1,6 +1,6 @@
 class VehiclesController < ApplicationController
   before_action :authenticate_user!
-  before_action :load_values, only: [:search]
+  before_action :load_values, only: [:search, :create]
 
   def create
     @vehicle = Vehicle.new(vehicle_params)
@@ -30,6 +30,7 @@ class VehiclesController < ApplicationController
   end
 
   def search
+    byebug
     query = Vehicle.where(search_params)
     query = query.where(user_id: current_user.id) unless current_user.admin?
     @vehicle = query.includes(:insurances).first
