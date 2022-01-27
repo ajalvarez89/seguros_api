@@ -23,7 +23,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'jquery', '~> 0.0.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
-gem 'sidekiq', '~> 5.0'
+gem 'sidekiq', '~> 6.4'
 
 
 #pagintation
